@@ -27,10 +27,10 @@ class CreateDatabase :
                                         f"lieu TEXT ," \
                                         f"panne TEXT ," \
                                         f"piece TEXT ," \
-                                        f"tmpEcoule TEXT ," \
+                                        f"tmpEcouleDepuisPanne TEXT ," \
                                         f"etat_panne TEXT ," \
                                         f"satisfaction TEXT ," \
-                                        f"duree TEXT)"
+                                        f"dureeIntervention TEXT)"
         return createTableIntervention
 
     def create_technicien(self):

@@ -43,20 +43,20 @@ class DatabaseActions:
                     f"                 lieu," \
                     f"                 panne," \
                     f"                 piece," \
-                    f"                 tmpEcoule," \
+                    f"                 tmpEcouleDepuisPanne," \
                     f"                 etatPanne," \
                     f"                 satisfaction," \
-                    f"                  duree) " \
+                    f"                  dureeIntervention) " \
                     f"VALUES('{intervention.client}'," \
                     f"       '{intervention.technicien}'," \
                     f"       '{intervention.date}'," \
                     f"       '{intervention.lieu}'," \
                     f"       '{intervention.panne}'," \
                     f"       '{intervention.piece}'," \
-                    f"       '{intervention.tmpEcoule}'," \
+                    f"       '{intervention.tmpEcouleDepuisPanne}'," \
                     f"       '{intervention.etatPanne}'," \
                     f"       '{intervention.satisfaction}'," \
-                    f"       '{intervention.duree}')"
+                    f"       '{intervention.dureeIntervention}')"
         self.__cursor.execute(supp)
         self.__commit()
         return True

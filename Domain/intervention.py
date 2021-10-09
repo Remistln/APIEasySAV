@@ -4,7 +4,7 @@ import flask
 from flask import Flask
 
 class Intervention:
-    def __init__(self, client, technicien, date, lieu, panne, piece, tmpEcoule, etatPanne, satisfaction, duree):
+    def __init__(self, client, technicien, date, lieu, panne, piece, tmpEcouleDepuisPanne, etatPanne, satisfaction, dureeIntervention):
         self.code = None
         self.client = client
         self.technicien = technicien
@@ -12,10 +12,10 @@ class Intervention:
         self.lieu = lieu
         self.panne = panne
         self.piece = piece
-        self.tmpEcoule = tmpEcoule
+        self.tmpEcouleDepuisPanne = tmpEcouleDepuisPanne
         self.etatPannee = etatPanne
         self.satisfaction = satisfaction
-        self.duree = duree
+        self.dureeIntervention = dureeIntervention
 
     def jesonification(self):
         return flask.json.dumps(self.__dict__)

@@ -6,10 +6,10 @@
     "lieu" : "Lille",
     "panne": "lave-linge",
     "piece": "tambour",
-    "tmpEcoule": "2h30",
+    "tmpEcouleDepuisPanne": "2h30",
     "etatPanne": "correct",
     "satisfaction": "content",
-    "duree": "4h00"
+    "dureeIntervention": "4h00"
 },
     "intervention2" : {
     "client": "Aurélien",
@@ -18,10 +18,10 @@
     "lieu" : "Paris",
     "panne": "voiture",
     "piece": "moteur",
-    "tmpEcoule": "1h30",
+    "tmpEcouleDepuisPanne": "1h30",
     "etatPanne": "mauvaise",
     "satisfaction": "heureux",
-    "duree": "5h00"
+    "dureeIntervention": "5h00"
 },
     "intervention3" : {
     "client": "Florimond",
@@ -30,10 +30,10 @@
     "lieu" : "Marseille",
     "panne": "moto",
     "piece": "guidon",
-    "tmpEcoule": "1h00",
+    "tmpEcouleDepuisPanne": "1h00",
     "etatPanne": "bonne",
     "satisfaction": "content",
-    "duree": "2h00"
+    "dureeIntervention": "2h00"
 },
     "intervention4" : {
     "client": "Nicolas",
@@ -42,10 +42,10 @@
     "lieu" : "Lyon",
     "panne": "télé",
     "piece": "écran",
-    "tmpEcoule": "30 min",
+    "tmpEcouleDepuisPanne": "30 min",
     "etatPanne": "correct",
     "satisfaction": "content",
-    "duree": "1h30"
+    "dureeIntervention": "1h30"
 },
     "intervention5" : {
     "client": "Andrew",
@@ -54,9 +54,9 @@
     "lieu" : "Lille",
     "panne": "tondeuse",
     "piece": "moteur",
-    "tmpEcoule": "1h00",
+    "tmpEcouleDepuisPanne": "1h00",
     "etatPanne": "correct",
     "satisfaction": "content",
-    "duree": "1h45"
+    "dureeIntervention": "1h45"
 }
 }

@@ -1,3 +1,5 @@
+import flask
+from flask import Flask
 from Domain.intervention import Intervention
 
 
@@ -17,3 +19,6 @@ class Technicien:
 
     def ajout_dispo(self, dispo):
         self.dispo.append(dispo)
+
+    def jesonification(self):
+        return flask.json.dumps(self.__dict__)
