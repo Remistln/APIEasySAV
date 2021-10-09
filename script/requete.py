@@ -13,11 +13,14 @@ class DatabaseActions:
         self.__conn = sqlite3.connect(connection_link)
         self.__cursor = self.__conn.cursor()
 
-    def __execute_commande(self, sqlCommand):
-        self.__cursor.execute(sqlCommand)
+    def __execute(self, command):
+        self.__cursor.execute(command)
 
     def __commit(self):
         self.__conn.commit()
+
+    def close(self):
+        self.connexion.close()
 
     def get_all_interventions(self):
         lst = {}
