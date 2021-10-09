@@ -13,7 +13,7 @@ class Intervention:
         self.panne = panne
         self.piece = piece
         self.tmpEcouleDepuisPanne = tmpEcouleDepuisPanne
-        self.etatPannee = etatPanne
+        self.etatPanne = etatPanne
         self.satisfaction = satisfaction
         self.dureeIntervention = dureeIntervention
 

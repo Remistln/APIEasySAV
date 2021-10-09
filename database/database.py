@@ -28,7 +28,7 @@ class CreateDatabase :
                                         f"panne TEXT ," \
                                         f"piece TEXT ," \
                                         f"tmpEcouleDepuisPanne TEXT ," \
-                                        f"etat_panne TEXT ," \
+                                        f"etatPanne TEXT ," \
                                         f"satisfaction TEXT ," \
                                         f"dureeIntervention TEXT)"
         return createTableIntervention
