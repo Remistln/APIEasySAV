@@ -1,7 +1,7 @@
 import sqlite3
 
 
-class CreateEasySAV :
+class CreateDatabase :
     def __init__(self):
         pass
 
@@ -27,7 +27,7 @@ class CreateEasySAV :
                                         f"lieu TEXT ," \
                                         f"panne TEXT ," \
                                         f"piece TEXT ," \
-                                        f"temps_ecoule TEXT ," \
+                                        f"tmpEcoule TEXT ," \
                                         f"etat_panne TEXT ," \
                                         f"satisfaction TEXT ," \
                                         f"duree TEXT)"
@@ -68,23 +68,23 @@ class CreateEasySAV :
 
 if __name__ == '__main__':
 
-    database = "EasySAV.db"
+    databaseName = "EasySAV.db"
 
     #instencier l'objet
-    database_name = CreateEasySAV()
+    database = CreateDatabase()
 
     #faire la conexion a la base de donnee
-    database_name.connect(database)
+    database.connect(databaseName)
 
     #creer une table dans le fichier *.db cree
 
-    CreateEasySAV.requete_execute(database_name, database_name.create_intervention())
-    CreateEasySAV.requete_execute(database_name, database_name.create_technicien())
-    CreateEasySAV.requete_execute(database_name, database_name.insert_intervention())
-    CreateEasySAV.requete_execute(database_name, database_name.insert_technicien())
+    CreateDatabase.requete_execute(database, database.create_intervention())
+    CreateDatabase.requete_execute(database, database.create_technicien())
+    CreateDatabase.requete_execute(database, database.insert_intervention())
+    CreateDatabase.requete_execute(database, database.insert_technicien())
 
     #envoyer a la base
-    CreateEasySAV.commit(database_name)
+    CreateDatabase.commit(database)
 
     #fin de la connexion
-    CreateEasySAV.close_connection(database_name)
+    CreateDatabase.close_connection(database)

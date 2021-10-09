@@ -6,8 +6,8 @@
     "lieu" : "Lille",
     "panne": "lave-linge",
     "piece": "tambour",
-    "tmp_ecoule": "2h30",
-    "etat_panne": "correct",
+    "tmpEcoule": "2h30",
+    "etatPanne": "correct",
     "satisfaction": "content",
     "duree": "4h00"
 },
@@ -18,8 +18,8 @@
     "lieu" : "Paris",
     "panne": "voiture",
     "piece": "moteur",
-    "tmp_ecoule": "1h30",
-    "etat_panne": "mauvaise",
+    "tmpEcoule": "1h30",
+    "etatPanne": "mauvaise",
     "satisfaction": "heureux",
     "duree": "5h00"
 },
@@ -30,8 +30,8 @@
     "lieu" : "Marseille",
     "panne": "moto",
     "piece": "guidon",
-    "tmp_ecoule": "1h00",
-    "etat_panne": "bonne",
+    "tmpEcoule": "1h00",
+    "etatPanne": "bonne",
     "satisfaction": "content",
     "duree": "2h00"
 },
@@ -42,8 +42,8 @@
     "lieu" : "Lyon",
     "panne": "télé",
     "piece": "écran",
-    "tmp_ecoule": "30 min",
-    "etat_panne": "correct",
+    "tmpEcoule": "30 min",
+    "etatPanne": "correct",
     "satisfaction": "content",
     "duree": "1h30"
 },
@@ -54,8 +54,8 @@
     "lieu" : "Lille",
     "panne": "tondeuse",
     "piece": "moteur",
-    "tmp_ecoule": "1h00",
-    "etat_panne": "correct",
+    "tmpEcoule": "1h00",
+    "etatPanne": "correct",
     "satisfaction": "content",
     "duree": "1h45"
 }

@@ -43,8 +43,8 @@ class DatabaseActions:
                     f"                 lieu," \
                     f"                 panne," \
                     f"                 piece," \
-                    f"                 etat_panne," \
-                    f"                 temps_ecoule," \
+                    f"                 tmpEcoule," \
+                    f"                 etatPanne," \
                     f"                 satisfaction," \
                     f"                  duree) " \
                     f"VALUES('{intervention.client}'," \
@@ -53,8 +53,8 @@ class DatabaseActions:
                     f"       '{intervention.lieu}'," \
                     f"       '{intervention.panne}'," \
                     f"       '{intervention.piece}'," \
-                    f"       '{intervention.etat_panne}'," \
-                    f"       '{intervention.tmp_ecoule}'," \
+                    f"       '{intervention.tmpEcoule}'," \
+                    f"       '{intervention.etatPanne}'," \
                     f"       '{intervention.satisfaction}'," \
                     f"       '{intervention.duree}')"
         self.__cursor.execute(supp)
