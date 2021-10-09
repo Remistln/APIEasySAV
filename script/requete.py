@@ -22,24 +22,25 @@ class DatabaseActions:
     def close(self):
         self.connexion.close()
 
-    def get_all_interventions(self):
+    def return_interventions(self):
         lst = {}
         n = 1
         self.__cursor.execute("SELECT * FROM INTERVENTION")
         for row in self.__cursor:
-            lst.update({n: Intervention(row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8], row[9], row[10]).jesonification()})
+            lst.update({n: Intervention(row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8], row[9], row[10])
+                       .jesonification()})
             n += 1
         return lst
 
-    def get_all_techniciens(self):
+    def return_techniciens(self):
         liste = []
         self.__execute("SELECT * FROM TECHNICIEN")
         for row in self.__cursor:
-            liste.append(Technicien(row[0], row[1], row[2], row[3], row[4]).to_dict())
+            liste.append(Technicien(row[0], row[1], row[2], row[3], row[4]).jesonification())
         return liste
 
 
-    def save_intervention(self, intervention):
+    def commit_intervention(self, intervention):
         supp = f"INSERT INTO INTERVENTION(client," \
                     f"                 technicien," \
                     f"                 date_intervention," \
