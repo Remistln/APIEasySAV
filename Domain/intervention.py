@@ -18,4 +18,24 @@ class Intervention:
         self.dureeIntervention = dureeIntervention
 
     def jesonification(self):
-        return flask.json.dumps(self.__dict__)
+
+        # return flask.json.dumps(self.__dict__)
+
+        interventionJson = {
+                "code": self.code,
+                "client": self.client,
+                "technicien": self.technicien,
+                "date": self.date,
+                "lieu": self.lieu,
+                "panne": self.panne,
+                "piece": self.piece,
+                "tmpEcouleDepuisPanne": self.tmpEcouleDepuisPanne,
+                "etatPanne": self.etatPanne,
+                "satisfaction": self.satisfaction,
+                "dureeIntervention": self.dureeIntervention
+            }
+
+        return interventionJson
+
+
+

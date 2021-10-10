@@ -27,10 +27,10 @@ class CreateDatabase :
                                         f"lieu TEXT ," \
                                         f"panne TEXT ," \
                                         f"piece TEXT ," \
-                                        f"tmpEcouleDepuisPanne TEXT ," \
+                                        f"tmpEcouleDepuisPanne INTEGER ," \
                                         f"etatPanne TEXT ," \
                                         f"satisfaction TEXT ," \
-                                        f"dureeIntervention TEXT)"
+                                        f"dureeIntervention INTEGER)"
         return createTableIntervention
 
     def create_technicien(self):
@@ -44,17 +44,17 @@ class CreateDatabase :
 
     def insert_intervention(self):
         insertDataIntervention = f"INSERT INTO INTERVENTION VALUES(" \
-                                  f"1," \
+                                  f"5," \
                                   f"'Remi Staelen', " \
                                   f"'Emile Najare'," \
                                   f"2020-02-02," \
                                   f"'Lille'," \
                                   f"'Machine a laver'," \
                                   f"'Reservoir'," \
-                                  f"'120'," \
+                                  f"120," \
                                   f"'Terminee'," \
                                   f"'Très Bien'," \
-                                  f"'15')"
+                                  f"15)"
         return insertDataIntervention
 
     def insert_technicien(self):
