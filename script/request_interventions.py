@@ -32,13 +32,6 @@ class DatabaseActions:
             n += 1
         return lst
 
-    def return_techniciens(self):
-        liste = []
-        self.__execute("SELECT * FROM TECHNICIEN")
-        for row in self.__cursor:
-            liste.append(Technicien(row[0], row[1], row[2], row[3], row[4]).jesonification())
-        return liste
-
 
     def commit_intervention(self, intervention):
         supp = f"INSERT INTO INTERVENTION(client," \

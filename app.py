@@ -2,7 +2,7 @@ import flask
 from flask import Flask, jsonify, request
 import json
 from Domain.intervention import Intervention
-from script.requete import DatabaseActions
+from script.request_interventions import DatabaseActions
 import data
 
 app = Flask(__name__)
